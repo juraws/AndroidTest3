@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/shapeDiaLv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_black"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@color/black" />
+
+            <Button
+                android:id="@+id/btn_red"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@color/red" />
+
+            <Button
+                android:id="@+id/btn_yellow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@color/light_yellow" />
+
+            <Button
+                android:id="@+id/btn_blue"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@color/blue" />
+
+            <Button
+                android:id="@+id/btn_green"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@color/green" />
+
+            <Button
+                android:id="@+id/btn_orange"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@color/orange" />
+
+            <Button
+                android:id="@+id/btn_grey"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@color/dark_grey" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/colorDiaRL_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shapeDiaLv_1">
+
+            <TextView
+                android:id="@+id/colorDiaTv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="自定义颜色：#"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/colorDiaEv_1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/colorDiaTv_1"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
