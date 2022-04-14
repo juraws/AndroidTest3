@@ -328,6 +328,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_undo:
 //                    vec.remove(cnt);
+                    if (cnt == 0) return;
                     vec.remove(cnt - 1);
                     cnt--;
                     paintCanvas();
